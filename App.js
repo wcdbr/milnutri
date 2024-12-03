@@ -1,31 +1,18 @@
 // imports
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import GenericImage from './components/atoms/Image';
-import GenericContainer from './components/atoms/Container';
+import styled from 'styled-components/native';
+import AppHeader from './components/molecules/Header';
 
 // component function
 export default function App() {
   return (
-    <View style={styles.container}>
-      <GenericImage/>
-      <GenericContainer>
-        <h1>
-          Hello World!  
-        </h1> 
-      </GenericContainer>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <AppWrapper>
+      <AppHeader/>
+    </AppWrapper>
   );
 }
 
 // component styles
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+const AppWrapper = styled.View`
+  flex: 1;
+  background-color: #fff;
+`
