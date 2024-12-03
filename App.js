@@ -1,8 +1,10 @@
+// imports
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import GenericImage from './components/atoms/GenericImage';
 import GenericContainer from './components/atoms/GenericContainer';
 
+// component function
 export default function App() {
   return (
     <View style={styles.container}>
@@ -18,6 +20,7 @@ export default function App() {
   );
 }
 
+// component styles
 const styles = StyleSheet.create({
   container: {
     flex: 1,
