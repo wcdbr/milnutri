@@ -1,8 +1,8 @@
 // imports
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import GenericImage from './components/atoms/GenericImage';
-import GenericContainer from './components/atoms/GenericContainer';
+import GenericImage from './components/atoms/Image';
+import GenericContainer from './components/atoms/Container';
 
 // component function
 export default function App() {

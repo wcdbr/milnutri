@@ -2,14 +2,6 @@
 import styled from 'styled-components/native'
 
 // component function
-const StyledContainer = styled.View`
-    width: 500px;
-    height: 400px;
-    background-color: blue;
-    color: white;
-`
-
-// component styles
 export default function GenericContainer({children}){
     return (
         <StyledContainer>
@@ -17,3 +9,11 @@ export default function GenericContainer({children}){
         </StyledContainer>
     )
 }
+
+// component styles
+const StyledContainer = styled.View`
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+    color: white;
+`
