@@ -17,7 +17,7 @@ export default function AppHeader(){
                 margin={'0 0 6px 0'}
                 justify={'center'} 
                 align={'center'} 
-                bgcolor={'#ddf7ff'}>
+                bgcolor={'#DDF7FF'}>
                 <NutriciaLogoImage 
                     source={require( NutriciaImg )} 
                     resizeMode="contain"/>
@@ -26,7 +26,7 @@ export default function AppHeader(){
             {/* milnutri logo & container */}
             <Container
                 padding={'12px 0 12px 10px'}
-                bgcolor={'#c0f1ff'}>
+                bgcolor={'#C0F1FF'}>
                 <MilnutriLogoImage source={require( MilnutriImg )} resizeMode="contain"/>
             </Container>
         </HeaderWrapper>
