@@ -2,19 +2,18 @@
 import styled from 'styled-components/native'
 
 // component function
-export default function GenericImage({src, width, height}){
+export default function Image({src, width, height}) {
     return (
         <StyledImage 
             source={src}
-            style={{
-                'width': width, 
-                'height': height
-            }}/>
+            width={width}
+            height={height}
+        />
     )
 }
 
 // component styles
-const StyledImage = styled.Image `
-    width: 10px;
-    height: 10px;
+const StyledImage = styled.Image`
+    width: ${({width}) => width || '100%'};
+    height: ${({height}) => height || '100%'};
 `

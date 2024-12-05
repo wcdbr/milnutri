@@ -23,6 +23,12 @@
     },
     "web": {
       "favicon": ""
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "9053a33a-b765-4267-ac09-7bc3c46956d1"
+      }
+    },
+    "owner": "andreasyuji"
   }
 }
