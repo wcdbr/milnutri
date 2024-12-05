@@ -1,8 +1,8 @@
-// imports
+// imports:
 import styled from 'styled-components/native';
 import AppHeader from './components/molecules/AppHeader';
 
-// component function
+// component function:
 export default function App() {
   return (
     <AppWrapper>
@@ -11,7 +11,7 @@ export default function App() {
   );
 }
 
-// component styles
+// component styles:
 const AppWrapper = styled.View`
-  margin-top: 43px;
+  box-sizing: border-box;
 `
