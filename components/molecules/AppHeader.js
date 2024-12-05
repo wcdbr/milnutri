@@ -2,7 +2,7 @@
 import styled from "styled-components/native";
 import Container from '../atoms/Container'
 
-// assets:
+    // assets
 const NutriciaImg = '../../assets/img/nutricia-logo.png'
 const MilnutriImg = '../../assets/img/milnutri-logo.png'
 
@@ -14,19 +14,20 @@ export default function AppHeader(){
             <Container 
                 height={'90px'}
                 padding={'47px 0 10px 0'} 
+                margin={'0 0 6px 0'}
                 justify={'center'} 
                 align={'center'} 
-                bgcolor={'#ddf7ff'}
-            >
-                <NutriciaLogoImage source={require( NutriciaImg )}/>
+                bgcolor={'#ddf7ff'}>
+                <NutriciaLogoImage 
+                    source={require( NutriciaImg )} 
+                    resizeMode="contain"/>
             </Container>
 
             {/* milnutri logo & container */}
             <Container
                 padding={'12px 0 12px 10px'}
-                bgcolor={'#c0f1ff'}
-            >
-                <MilnutriLogoImage source={require( MilnutriImg )}/>
+                bgcolor={'#c0f1ff'}>
+                <MilnutriLogoImage source={require( MilnutriImg )} resizeMode="contain"/>
             </Container>
         </HeaderWrapper>
     )
@@ -36,7 +37,7 @@ export default function AppHeader(){
     // wrapper
 const HeaderWrapper = styled.View`
     width: 100%;
-    gap: 5px;
+    margin-bottom: 47px;
 `
 
     // images
