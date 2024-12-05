@@ -6,9 +6,6 @@ import AppHeader from './components/molecules/AppHeader';
 export default function App() {
   return (
     <AppWrapper>
-      <CustomText>
-        alow
-      </CustomText>
       <AppHeader/>
     </AppWrapper>
   );
@@ -16,12 +13,5 @@ export default function App() {
 
 // component styles
 const AppWrapper = styled.View`
-  margin-top: 41px;
-  
-  flex: 1;
-`
-const CustomText = styled.Text`
-  width: 100%;
-  align-items: center;
-  background-color: red;
+  margin-top: 43px;
 `

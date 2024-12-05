@@ -1,20 +1,17 @@
 // imports
 import styled from "styled-components/native";
-import Container from "../atoms/Container";
-import ImageContainer from '../atoms/ImageContainer';
+
+// assets:
+const ImgNutricia = '../../assets/nutricia-logo.png'
 
 // component function
 export default function AppHeader(){
     return(
         <HeaderWrapper>
             {/* nutricia logo */}
-            <Container width={'100%'} bgcolor={'#DDF7FF'} height={'100px'}>
-                <ImageContainer 
-                    src={require('../../assets/nutricia-logo.png')}
-                    width={'100px'}
-                    height={'100px'}
-                    />
-            </Container>
+            <NutriciaLogoContainer>
+                <NutriciaLogoImage source={require(ImgNutricia)}/>
+            </NutriciaLogoContainer>
         </HeaderWrapper>
     )
 }
@@ -22,4 +19,17 @@ export default function AppHeader(){
 // component styles
 const HeaderWrapper = styled.View`
     width: 100%;
+    gap: 5px;
+`
+
+const NutriciaLogoContainer = styled.View`
+    width: 100%;
+    height: 45px;
+    background-color: #ddf7ff;
+    justify-content: center;
+    align-items: center;
+`
+const NutriciaLogoImage = styled.Image`
+    width: 110px;
+    height: 45px;
 `
