@@ -35,7 +35,7 @@ export default function AppHeader(){
                 <Image 
                     src={ MilnutriImg }
                     width={'120px'}
-                    height={'45px'}
+                    height={'50px'}
                     resizeMode="contain"/>
             </Container>
         </HeaderWrapper>
