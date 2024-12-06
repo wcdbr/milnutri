@@ -1,7 +1,7 @@
 // imports:
 import styled from "styled-components/native";
-import Container from '../atoms/Container'
-import Image from '../atoms/Image'
+import Container from '../atoms/generic/Container'
+import Image from '../atoms/generic/Image'
 
     // assets
 import NutriciaImg from '../../assets/img/header/nutricia-logo.png';
