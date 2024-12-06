@@ -3,8 +3,8 @@ import styled from "styled-components/native";
 import Container from '../atoms/Container'
 
     // assets
-import NutriciaImg from '../../assets/img/nutricia-logo.png';
-import MilnutriImg from '../../assets/img/milnutri-logo.png';
+import NutriciaImg from '../../assets/img/header/nutricia-logo.png';
+import MilnutriImg from '../../assets/img/header/milnutri-logo.png';
 
 // component function:
 export default function AppHeader(){
@@ -18,6 +18,7 @@ export default function AppHeader(){
                 justify={'center'} 
                 align={'center'} 
                 bgcolor={'#DDF7FF'}>
+
                 <NutriciaLogoImage 
                     source={ NutriciaImg } 
                     resizeMode="contain"/>
@@ -27,7 +28,10 @@ export default function AppHeader(){
             <Container
                 padding={'12px 0 12px 10px'}
                 bgcolor={'#C0F1FF'}>
-                <MilnutriLogoImage source={ MilnutriImg } resizeMode="contain"/>
+
+                <MilnutriLogoImage 
+                    source={ MilnutriImg } 
+                    resizeMode="contain"/>
             </Container>
         </HeaderWrapper>
     )
