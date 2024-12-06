@@ -14,7 +14,7 @@ export default function AppHeader(){
             {/* nutricia logo & container */}
             <Container 
                 height={'90px'}
-                padding={'47px 0 10px 0'} 
+                padding={'52px 0 13px 0'} 
                 margin={'0 0 6px 0'}
                 justify={'center'} 
                 align={'center'} 
@@ -22,7 +22,7 @@ export default function AppHeader(){
 
                 <Image 
                     src={ NutriciaImg }
-                    width={'110px'}
+                    width={'140px'}
                     height={'45px'}
                     resizeMode="contain"/>
             </Container>
