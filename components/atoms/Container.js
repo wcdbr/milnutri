@@ -2,7 +2,7 @@
 import styled from "styled-components/native";
 
 // component function:
-export default function Container({children, width, height, padding, margin, justify, align, bgcolor}){
+export default function Container({children, width, height, padding, margin, direction, justify, align, bgcolor}){
     return(
         <StyledContainer
             width={width}
@@ -11,6 +11,7 @@ export default function Container({children, width, height, padding, margin, jus
             padding={padding}
             margin={margin}
 
+            direction={direction}
             justify={justify}
             align={align}
 
@@ -29,6 +30,7 @@ const StyledContainer = styled.View`
     padding: ${({ padding }) => padding || '0'};
     margin: ${({ margin }) => margin || '0'};
 
+    flex-direction: ${({ direction }) => direction || 'row'};
     justify-content: ${({ justify }) => justify || 'flex-start'};
     align-items: ${({ align }) => align || 'flex-start'};
 

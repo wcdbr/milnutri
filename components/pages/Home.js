@@ -1,19 +1,19 @@
 // imports:
 import styled from 'styled-components/native';
-import Home from './components/pages/Home.js';
+import AppHeader from '../molecules/AppHeader';
 
 // component function:
 export default function App() {
   return (
-    <AppWrapper>
+    <HomeWrapper>
 
-      <Home/>
+      <AppHeader/>
       
-    </AppWrapper>
+    </HomeWrapper>
   );
 }
 
 // component styles:
-const AppWrapper = styled.View`
+const HomeWrapper = styled.View`
   box-sizing: border-box;
 `
