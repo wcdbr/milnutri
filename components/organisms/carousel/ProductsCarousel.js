@@ -5,7 +5,7 @@ import CarouselContainer from '../../molecules/carrousel/CarouselContainer'
 // assets & texts
 const images = [
     require('../../../assets/img/carousel/CarouselImage1.png'),
-    require('../../../assets/img/carousel/CarouselImage2.png')
+    require('../../../assets/img/header/milnutri-logo.png')
 ];
 
 const texts = [

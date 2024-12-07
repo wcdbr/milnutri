@@ -46,5 +46,5 @@ export default function AppHeader(){
     // component wrapper
 const HeaderWrapper = styled.View`
     width: 100%;
-    margin-bottom: 47px;
+    margin-bottom: 50px;
 `

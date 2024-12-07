@@ -18,32 +18,49 @@ export default function CarouselContainer({ images, texts }) {
     };
 
     return (
+        <>
         <Container>
             <CarouselImage source={images[currentIndex]} />
             <CarouselText>{texts[currentIndex]}</CarouselText>
+        </Container>
             <CarouselControls
                 total={images.length}
                 activeIndex={currentIndex}
                 onNext={handleNext}
                 onPrev={handlePrev}
             />
-        </Container>
+        </>
     );
 }
 
-
-// component styles:
-    // wrapper
+// Container
 const Container = styled.View`
-    width: 100%;
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: 30px 10px;
+    width: 95%;
+    height: 320px;
     align-items: center;
     justify-content: center;
+
+    /* Sombra para iOS */
+    shadowColor: #000;
+    shadowOffset: 0px 1px;
+    shadowOpacity: 0.25;
+    shadowRadius: 1px;
+    /* Sombra para Android */
+    elevation: 15;
 `;
+
 
     // text
 const CarouselText = styled.Text`
+    width: 100%;
     font-size: 16px;
     color: #333;
-    text-align: center;
-    margin: 10px 0;
+
+    position: absolute;
+    z-index: 3;
+    top: 200px;
+    padding: 10px 20px;
 `;
