@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import styled from 'styled-components/native';
 import CarouselImage from '../../atoms/carousel/CarouselImage';
-import CarouselControls from '../../molecules/carrousel/CarouselControls';
+import CarouselControls from './CarouselControls';
 
 
 // component function:
