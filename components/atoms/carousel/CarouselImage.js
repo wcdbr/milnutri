@@ -2,19 +2,17 @@
 import styled from 'styled-components/native';
 
 // component function:
-export default function CarrouselImage({ src, width, height }) {
+export default function CarouselImage({ source }) {
     return (
         <CarrouselImageWrapper 
-            source={src} 
+            source={source} 
             resizeMode="contain" 
-            width={width}
-            height={height}
         />
     );
 }
 
 // component styles:
 const CarrouselImageWrapper = styled.Image`
-    width: ${({ width }) => width || '100%'};
-    height: ${({ height }) => height || '304px'};
+    width: 100%;
+    height: 304px;
 `;
