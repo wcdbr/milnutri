@@ -1,23 +1,26 @@
 // imports:
-import styled from "styled-components/native"
+import styled from "styled-components/native";
 
 // component function:
-export default function CarrouselChangeButton( { direction, onPress } ){
-    return(
+export default function CarrouselChangeButton({ direction, onPress }) {
+    return (
         <CarrouselChangeButtonWrapper onPress={onPress}>
             <ButtonText>{direction === 'left' ? '<' : '>'}</ButtonText>
         </CarrouselChangeButtonWrapper>
-    )
+    );
 }
 
 // component styles:
-    // wrapper
-const CarrouselChangeButtonWrapper = styled.Button`
+const CarrouselChangeButtonWrapper = styled.TouchableOpacity`
     background-color: red;
-`
-    // text
+    padding: 10px;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+`;
+
 const ButtonText = styled.Text`
     font-size: 18px;
     font-weight: bold;
-    color: #333;
+    color: white;
 `;
