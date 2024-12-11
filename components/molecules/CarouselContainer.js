@@ -5,6 +5,7 @@ import Carousel from 'react-native-reanimated-carousel';
 import styled from 'styled-components/native';
 // images:
 import CarouselImage1 from '../../assets/img/carousel/CarouselImage1.png';
+import CarouselImage2 from '../../assets/img/carousel/CarouselImage1.png';
 
 // component function
 export default function ProductsCarousel() {
@@ -15,7 +16,7 @@ export default function ProductsCarousel() {
   // carousel items:
   const CarouselItems = [
     { image: CarouselImage1, text: 'Conheça nossa família de produtos Milnutri'},
-    { image: CarouselImage1, text: 'Teste 2' },
+    { image: CarouselImage2, text: 'Teste 2' },
   ];
 
   return (
