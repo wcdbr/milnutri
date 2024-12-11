@@ -1,7 +1,7 @@
 // imports:
 import styled from 'styled-components/native';
 import AppHeader from '../molecules/AppHeader';
-import ProductsCarousel from '../organisms/carousel/ProductsCarousel';
+import ProductsCarousel from '../molecules/CarouselContainer';
 
 // component function:
 export default function App() {
